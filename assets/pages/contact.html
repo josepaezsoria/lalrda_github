@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La LRDA - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../image/logo lrda.jpeg">
+</head>
+
+<!--BODY con atributos Grid para el layout-->
+
+<body>
+
+    <!--HEADER con atributos Flexbox para los componentes.-->
+    <header>
+        <!--El header incluye un reproductor basico de audio, pero la idea es tener algo mas pro.-->
+
+        <nav class="navbar flex-row container">
+            <picture class="logo"><a href="../../index.html"><img src="../image/logo lrda.jpeg" width="75px"
+                        alt="Logo de La Radio Del Alma"></a></picture>
+            <ul class="menu flex-row">
+                <li>
+                    <a href="../../index.html" style="color: aliceblue;">Inicio</a>
+                </li>
+                <li>
+                    <a href="services.html" style="color: aliceblue;">Programas</a>
+                </li>
+                <li>
+                    <a href="gallery.html" style="color: aliceblue;">Galeria</a>
+                </li>
+                <li>
+                    <a href="about.html" style="color: aliceblue;">Quienes Somos</a>
+                </li>
+                <li>
+                    <a href="contact.html" style="color: aliceblue;">Contacto</a>
+                </li>
+                <li>
+                    <audio autoplay controls="controls">
+                        <source src="https://radios.solumedia.com/6032/stream" type="audio/mpeg">
+                    </audio>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN con atributos Flexbox para los componentes.-->
+    <main>
+
+        <section id="section1" class="presentation container">
+            <div class="presentation__description flex-row">
+                <h2>
+                    GRACIAS POR ELEGIRNOS
+                </h2>
+
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quam vel. Ab autem, rerum quia,
+                    accusantium atque harum dolorem ipsum eius quae minima provident iure fuga, beatae magnam ipsam
+                    consequuntur.</P>
+            </div>
+
+
+        </section>
+
+        <section id="section2" class="presentation container">
+
+            <div class="presentation__description flex-row">
+                <H1>CONTACTO</H1>
+                <form action="formulario" class="flex-column" style="border: 1rem; padding: 1rem;">
+                    <br>
+                    <input type="text" name="Nombre y apellido" id="" value="Nombre y Apellido">
+                    <br>
+                    <input type="email" name="email" id="" value="E-Mail">
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="button" value="Enviar">
+                </form>
+            </div>
+
+        </section>
+
+        <aside>
+            <!--aqui irian publicidades o (en su defecto) los links para rrss.-->
+            <p>espacio a definir</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>TODOS LOS DERECHOS RESERVADOS</p>
+        <p>Desarrollado por José Paez Soria</p>
+    </footer>
+
+</body>
+
+</html>

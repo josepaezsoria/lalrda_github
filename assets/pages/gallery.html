@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La LRDA - Galeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../image/logo lrda.jpeg">
+</head>
+
+<!--BODY con atributos Grid para el layout-->
+
+<body>
+
+    <!--HEADER con atributos Flexbox para los componentes.-->
+    <header>
+        <!--El header incluye un reproductor basico de audio, pero la idea es tener algo mas pro.-->
+
+        <nav class="navbar flex-row container">
+            <picture class="logo"><a href="../../index.html"><img src="../image/logo lrda.jpeg" width="75px"
+                        alt="Logo de La Radio Del Alma"></a></picture>
+            <ul class="menu flex-row">
+                <li>
+                    <a href="../../index.html" style="color: aliceblue;">Inicio</a>
+                </li>
+                <li>
+                    <a href="services.html" style="color: aliceblue;">Programas</a>
+                </li>
+                <li>
+                    <a href="gallery.html" style="color: aliceblue;">Galeria</a>
+                </li>
+                <li>
+                    <a href="about.html" style="color: aliceblue;">Quienes Somos</a>
+                </li>
+                <li>
+                    <a href="contact.html" style="color: aliceblue;">Contacto</a>
+                </li>
+                <li>
+                    <audio autoplay controls="controls">
+                        <source src="https://radios.solumedia.com/6032/stream" type="audio/mpeg">
+                    </audio>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN con atributos Flexbox para los componentes.-->
+    <main>
+
+        <section id="section1" class="presentation container">
+            <article class="presentation__description flex-row">
+
+                <h1>GALERIA</H1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo itaque ea ducimus sit dicta, quae optio
+                    tempora doloribus ex accusantium numquam. Provident quo non reprehenderit pariatur laudantium
+                    adipisci reiciendis fugit?</p>
+            </article>
+
+            <picture class="presentation__picture">
+                <img class="presentation__img" src="../images/equipo radio.webp" width="480" alt="Equipo de la radio">
+            </picture>
+
+
+        </section>
+
+        <aside>
+            <!--aqui irian publicidades o (en su defecto) los links para rrss.-->
+
+            <p>espacio a definir</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>TODOS LOS DERECHOS RESERVADOS</p>
+        <p>Desarrollado por José Paez Soria</p>
+    </footer>
+
+</body>
+
+</html>
