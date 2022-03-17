@@ -32,7 +32,7 @@ body {
         "footer footer footer footer";
 
     grid-template-rows: 15vh, 1fr, 15vh;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: 1fr;
 
 }
 
