@@ -65,14 +65,14 @@ section#section2 {
 }
 
 aside {
-    background-color:var(--principal);
+    background-color: #F8F9FA;
     grid-area: aside;
     text-align: center;
 }
 
 footer {
     color: var(--secondary);
-    background-color: F8F9FA;
+    background-color: #F8F9FA;
     grid-area: footer;
     align-items: center;
     text-align: center;
