@@ -40,14 +40,12 @@ body {
 main {
     display: flex;
     background-image: url(../image/stacked-waves-haikei.svg);
-    column-gap: 3vh;
-    padding: 0.5vh;
 }
 
 /*Grid Template Areas*/
 
 header {
-    background-color: var(--principal);
+    background-color: var(--secondary);
     grid-area: header;
 }
 
@@ -67,14 +65,14 @@ section#section2 {
 }
 
 aside {
-    background-color:slategray;
+    background-color:var(--principal);
     grid-area: aside;
     text-align: center;
 }
 
 footer {
-    color: #ffffff;
-    background-color: var(--principal);
+    color: var(--secondary);
+    background-color: F8F9FA;
     grid-area: footer;
     align-items: center;
     text-align: center;
@@ -139,7 +137,7 @@ a {
 }
 
 p {
-    color: #ffffff;
+    color: var(--secondary);
 }
 
 
