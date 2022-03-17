@@ -65,7 +65,7 @@ section#section2 {
 }
 
 aside {
-    background-color: #F8F9FA;
+    background-color: var(--principal);
     grid-area: aside;
     text-align: center;
 }
