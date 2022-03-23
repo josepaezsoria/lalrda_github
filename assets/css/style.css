@@ -38,7 +38,7 @@ main {
 
 
 .background {
-    background: linear-gradient(to right top, #020873, #610073, #94006e, #bb1665, #d9415d);
+    background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
     background-position: center; 
         background-size: contain;
 }
@@ -50,3 +50,9 @@ main {
 @media screen and(max-width: 768px) {
 
 }
+
+
+
+
+  
+
