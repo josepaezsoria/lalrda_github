@@ -23,126 +23,88 @@
 <body>
 
   <!--HEADER con atributos Flexbox para los componentes.-->
-  <header>
+  <header class="container-fluid">
 
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="assets/image/logo lrda.jpeg" alt="" width="30" height="30" class="d-inline-block align-text-top">
-          La LRDA
+        <a class="navbar-brand" style="color:var(--secondary)" href="./index.html">
+          <img src="assets/image/logo lrda.jpeg" alt="" width="50" height="50" class="d-inline-block align-text-center">
+          La Radio Del Alma
         </a>
-        <ul class="nav nav-pills nav-fill">
-          <li class="nav-item">
-            <a class="nav-link active" style="background-color: #d9415d ;" href="./index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/pages/services.html">Programas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/pages/about.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/pages/gallery.html">Galería</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/pages/contact.html">Contacto</a>
-          </li>
-        </ul>
 
-        <audio controls class="embed-responsive-item">
-          <source src="https://radios.solumedia.com/6032/stream" type="audio/mpeg">
-        </audio>
-      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" style="background-color: #d9415d ;" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:var(--secondary) " href="./assets/pages/services.html">Programas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:var(--secondary)" href="./assets/pages/about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:var(--secondary)" href="./assets/pages/gallery.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:var(--secondary)" href="./assets/pages/contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
     </nav>
 
   </header>
 
   <!--MAIN con atributos Flexbox para los componentes.-->
+
   <main>
 
-    <section id="section1" class="presentation__container-fluid">
+    <section class="container background">
 
-      <div class="presentation">
-        <picture class="presentation__picture">
-          <img src="assets/image/Mic LRDA.webp" style="height: 640px" alt="Equipo de la radio">
-        </picture>
-    </div>
+      <div class="row">
 
-      <div class="presentation__description">
-        <h2 style="font-size: x-large;">Estás escuchando</h2>
-        <h1 style="font-size: xx-large;">#LARADIODELALMA</h1>
-        <h2>BIENVENIDOS</h2>
-        <br>
-        <h3>SOMOS TU MEJOR COMPAÑÌA.</h3>
-        <br>
+        <div class="col col-6 container-fluid" style="text-align: left;">
+          <iframe src="https://radios.solumedia.com/cp/widgets/player/single/?p=6032" height="110" width="100%"
+            scrolling="no" style="border:none;"></iframe>
+
+        </div>
+
+        <div class="col col-6 container-fluid" style="text-align: right;">
+          <a href=""><img src="./assets/image/icons/facebook.png" height="32px" alt=""></a>
+          <a href=""><img src="./assets/image/icons/instagram.png" height="32px" alt=""></a>
+          <a href=""><img src="./assets/image/icons/twitter.png" height="32px" alt=""></a>
+          <a href=""><img src="./assets/image/icons/tik tok.png" height="32px" alt=""></a>
+        </div>
+
+        <div class="col col-6">
+          <img class="img-fluid" src="./assets/image/Mic LRDA.webp" alt="">
+        </div>
+
+        <div class="col col-6">
+          <picture>
+            <img class="img-fluid" src="./assets/image/Hero.webp" alt="">
+            <div>
+              <h1>@laradiodelalma</h1>
+            </div>
+            <img class="img-fluid" src="./assets/images/equipo radio.webp" alt="">
+          </picture>
+
+        </div>
+
       </div>
     </section>
-
-    <section id="section1" class="presentation__container-fluid">
-      <article class="presentation">
-
-        <div class="presentation__description">
-          <ul>
-            <h3>Mañanas y siestas</h3>
-            <hr>
-            <li>Mezclando Todo - Lunes a Viernes 9hs a 11hs - Conduce Diego Longo</li>
-            <br>
-            <li>Music LRDA - Lunes a Viernes 11hs a 15hs</li>
-            <br>
-            <li>Buzón De Mensajes - Lunes a Viernes 15hs a 17hs - Conduce Cristian Paez</li>
-          </ul>
-          <br>
-        </div>
-      </article>
-
-    </section>
-
-    <section id="section2" class="presentation__container-fluid">
-      <article class="presentation">
-
-        <div class="presentation__description">
-          <ul>
-
-            <h3>Tardes y noches</h3>
-            <hr>
-            <li>Humoriarte - Lunes a Viernes 17hs a 19hs - Conduce Karen Reinoso</li>
-            <br>
-            <li>Poné La Pava - Lunes a Viernes 19hs a 20:30hs - Conduce Karen Paez</li>
-            <br>
-            <li>Club Random - Lunes a Viernes 20:30hs a 22hs - Conduce Facundo Torres</li>
-            <br>
-            <li>Perfect Night - Lunes a Viernes 22hs a 23:30hs - Conduce Daniel Rodriguez</li>
-            <br>
-            <li>Gen X - Lunes a Viernes 23:30hs a 01hs - Conduce Cesar Vega</li>
-          </ul>
-
-        </div>
-      </article>
-
-    </section>
-
-    <aside>
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="https://www.facebook.com/LaRadioDelAlma/">FACEBOOK</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-    </aside>
-
   </main>
 
   <footer>
-    <p>TODOS LOS DERECHOS RESERVADOS</p>
-    <p>Desarrollado por José Paez Soria</p>
+    <di class="align-text-center">
+      <p>TODOS LOS DERECHOS RESERVADOS</p>
+      <p>Copyright&copy; 2022</p>
+      <p>Desarrollado por José Paez Soria</p>
+      </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -23,38 +23,38 @@
 
     <!--HEADER con atributos Flexbox para los componentes.-->
     <header>
-        <!--El header incluye un reproductor basico de audio, pero la idea es tener algo mas pro.-->
 
         <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../../index.html">
-                    <img src="../image/logo lrda.jpeg" alt="" width="30" height="30"
-                        class="d-inline-block align-text-top">
-                    La LRDA
-                </a>
-                <ul class="nav nav-pills nav-fill">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Programas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" style="background-color: #d9415d;" href="contact.html">Contacto</a>
-                    </li>
-                </ul>
-                <audio autoplay controls="controls">
-                    <source src="https://radios.solumedia.com/6032/stream" type="audio/mpeg">
-                </audio>
+          <div class="container-fluid">
+            <a class="navbar-brand" style="color:var(--secondary)" href="../../index.html">
+              <img src="../../assets/image/logo lrda.jpeg" alt="" width="50" height="50" class="d-inline-block align-text-center">
+              La Radio Del Alma
+            </a>
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" style="color: var(--secondary);" href="../../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:var(--secondary); " href="services.html">Programas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: var(--secondary);" href="about.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:var(--secondary)" href="gallery.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="background-color: #d9415d" href="contact.html">Contacto</a>
+              </li>
+            </ul>
+    
+            <audio controls class="embed-responsive-item">
+              <source src="https://radios.solumedia.com/6032/stream" type="audio/mpeg">
+            </audio>
+          </div>
         </nav>
-
-    </header>
+    
+      </header>
 
     <!--MAIN con atributos Flexbox para los componentes.-->
     <main>
@@ -99,9 +99,13 @@
     </main>
 
     <footer>
-        <p>TODOS LOS DERECHOS RESERVADOS</p>
-        <p>Desarrollado por José Paez Soria</p>
-    </footer>
+        <di class="align-text-center">
+          <p>TODOS LOS DERECHOS RESERVADOS</p>
+          <p>Copyright&copy; 2022</p>
+          <p>Desarrollado por José Paez Soria</p>
+          </div>
+      </footer>
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

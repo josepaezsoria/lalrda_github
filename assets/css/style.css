@@ -3,7 +3,7 @@
 :root {
     --principal: #d9415d;
     --secondary: #020873;
-    --font-primary: "inter", san-serif;
+    --font-primary: "Montserrat", san-serif;
     --font-secondary: "bowly One SC", cursive;
 
 }
@@ -11,64 +11,73 @@
 
 /* Normalize */
 
-*,
-*::after,
-*::before {
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+
 }
 
 
 /* Layout */
 
-body {
-    display: grid;
-    min-height: 100vh;
-    grid-template-areas:
-        "header header header header"
-        "section1 section1 section2 aside"
-        "footer footer footer footer";
-
-    grid-template-rows: 15vh, 1fr, 15vh;
-    grid-template-columns: 1fr;
-
+main {
+    background-color:#ffffff;
 }
 
+.grid {
+    background: linear-gradient(to right top, #020873, #610073, #94006e, #bb1665, #d9415d);
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: 5vh 1fr 1fr 20vh;
 
-main {
-    display: flex;
-    background-image: url(../image/stacked-waves-haikei.svg);
+    grid-template-areas:
+        "banner-1 . banner-2"
+        "section-1 section-2 section-2"
+        "section-1 section-3 section-3"
+        "banner-3 banner-4 banner-5"
+    ;
+    gap: 1rem 1rem;
+    padding: 1rem;
 }
 
 /*Grid Template Areas*/
 
-header {
-    background-color: var(--secondary);
-    grid-area: header;
-}
-
-section#section1 {
-    grid-area: section1;
-    justify-content: center;
-    align-items: center;
-
+.banner-1 {
+    grid-area: banner-1;
 
 }
 
-section#section2 {
-    grid-area: section2;
-    justify-content: center;
-    align-items: center;
-
+.banner-2 {
+    grid-area: banner-2;
 }
 
-aside {
-    background-color: var(--principal);
-    grid-area: aside;
-    text-align: center;
+.banner-3 {
+    grid-area: banner-3;
 }
+
+.banner-4 {
+    grid-area: banner-4;
+}
+
+.banner-5 {
+    grid-area: banner-5;
+}
+
+.section-1 {
+    grid-area: section-1;
+}
+
+.section-2 {
+    grid-area: section-2;
+}
+
+.section-3 {
+    grid-area: section-3;
+}
+
 
 footer {
     color: var(--secondary);
@@ -103,7 +112,7 @@ header .menu {
 h1 {
     color: var(--secondary);
     background-color: var(--principal);
-    text-align: center;
+
 }
 
 h2 {
@@ -130,8 +139,8 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: underline;
+    color: var(--principal);
     display: inline-block;
     padding: 0.5rem;
 }
@@ -153,10 +162,11 @@ p {
     flex-direction: column;
 }
 
-.container {
-    max-width: 1080px;
-    margin: 0 auto;
-    align-items: center;
+
+.background {
+    background: linear-gradient(to right top, #020873, #610073, #94006e, #bb1665, #d9415d);
+    background-position: center; 
+        background-size: contain;
 }
 
 /*MAIN SECTION*/
@@ -174,36 +184,17 @@ p {
 .presentation__img {
     width: 100%;
 }
+
 .presentation__description {
-flex-basis: 50%;
-gap: 1rem;
+    flex-basis: 50%;
+    gap: 1rem;
 }
 
 
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 768px) {
 
-    .presentation {
-        flex-wrap: wrap;
-        font-size: .8em;
-        padding: 0 4em;
-    }
-    
-    .presentation__picture {
-        flex-grow: 1;
-        width: 100%;
-    }
+@media screen and(max-width: 768px) {
 
-    .presentation__description {
-    flex-grow: 1;
-    order: -1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    }
-    
 }
