@@ -1,0 +1,39 @@
+/* variables */
+:root {
+  --principal: #d9415d;
+  --secondary: #020873;
+  --font-primary: "Montserrat", san-serif;
+  --font-secondary: "bowly One SC", cursive; }
+
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Layout */
+main {
+  background-color: #ffffff;
+  min-height: 100%; }
+
+footer {
+  min-height: 5vh;
+  position: fixed;
+  text-align: center;
+  border-top: 1px solid rgba(50, 50, 50, 0.3);
+  width: 100%;
+  bottom: 0; }
+
+/*Helpers*/
+.flex-row {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.background {
+  background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
+  background-position: center;
+  background-size: contain; }
+
+/*MEDIA QUERIES*/

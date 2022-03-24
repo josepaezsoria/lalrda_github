@@ -1,0 +1,19 @@
+/* variables */
+
+$principal: #d9415d;
+$secondary: #020873;
+$font-primary: "Montserrat",
+san-serif;
+$font-secondary: "bowly One SC",
+cursive;
+
+main {
+    background-color: #ffffff;
+    min-height: 100%;
+}
+
+.background {
+    background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
+    background-position: center;
+    background-size: contain;
+}

@@ -1,0 +1,14 @@
+/*VARIABLES*/
+@import './misc/variables';
+
+/*GLOBALES*/
+@import './misc/normalize';
+@import './misc/mixins';
+
+/*`PARTIALS*/
+@import './partials/header';
+@import './partials/footer';
+
+/*VIEWS*/
+@import './views/home';
+@import './views/nosotros';
