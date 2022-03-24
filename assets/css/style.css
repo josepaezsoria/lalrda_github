@@ -25,6 +25,15 @@ main {
 }
 
 
+footer {
+    min-height: 70px;
+    text-align: center;
+    position: fixed;
+    border-top: 1px solid rgba(50, 50, 50, 0.3);
+    width: 100%;
+    bottom: 0;   
+} 
+
 /*Helpers*/
 
 .flex-row {
