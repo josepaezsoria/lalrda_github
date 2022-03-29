@@ -2,10 +2,26 @@
 
 
 /* Normalize */
+
+$theme: 'ligth';
+
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+main {
+    max-height: 100%;
+    font-family: inherit;
+
+    @if $theme=='dark' {
+        background-color: $secondary;
+    }
+
+    @else if $theme=='ligth' {
+        background-color: $ligth
+    }
 }

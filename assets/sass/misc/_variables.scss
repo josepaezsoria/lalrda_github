@@ -1,19 +1,12 @@
 /* variables */
 
 $principal: #d9415d;
+$ligth: #ffffff;
 $secondary: #020873;
 $font-primary: "Montserrat",
 san-serif;
 $font-secondary: "bowly One SC",
 cursive;
-
-main {
-    background-color: #ffffff;
-
-    &container {
-    max-height: 100%;
-}
-}
 
 
 .background {
@@ -34,3 +27,4 @@ a {
 h1 {
     color: $principal;
 }
+
