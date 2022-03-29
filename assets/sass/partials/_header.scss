@@ -1,1 +1,11 @@
 /*Header & nav*/
+
+.active {
+    color: $principal;
+    border-bottom: 1rem;
+    transition: all .3s ease-in-out;
+    &:hover {
+        color: $secondary;
+    }
+
+}

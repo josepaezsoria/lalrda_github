@@ -1,13 +1,23 @@
 /*VARIABLES*/
 /* variables */
 main {
-  background-color: #ffffff;
-  min-height: 100%; }
+  background-color: #ffffff; }
+  maincontainer {
+    max-height: 100%; }
 
 .background {
   background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
   background-position: center;
   background-size: contain; }
+
+p {
+  color: #020873; }
+
+a {
+  color: #d9415d; }
+
+h1 {
+  color: #d9415d; }
 
 /*GLOBALES*/
 /*import*/
@@ -20,19 +30,18 @@ main {
   box-sizing: border-box; }
 
 /*Helpers*/
-.flex-row {
-  display: flex; }
-
-.flex-column {
-  display: flex;
-  flex-direction: column; }
-
-/*`PARTIALS*/
+/*PARTIALS*/
 /*Header & nav*/
+.active {
+  color: #d9415d;
+  border-bottom: 1rem;
+  transition: all .3s ease-in-out; }
+  .active:hover {
+    color: #020873; }
+
 /*Footer*/
 footer {
-  min-height: 5vh;
-  position: fixed;
+  min-height: 15vh;
   text-align: center;
   border-top: 1px solid rgba(50, 50, 50, 0.3);
   width: 100%;
