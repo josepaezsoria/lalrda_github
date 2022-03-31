@@ -13,11 +13,11 @@
     color: $secondary;
     padding: map-get ($spacings, large) map-get($spacings, small);
 
-    @if $size == small {
+    @if $size==small {
         width: 70px;
     }
 
-    @else if $size == medium {
+    @else if $size==medium {
         width: 120px;
     }
 
@@ -27,8 +27,9 @@
 
 }
 
-@each $var, $val in $spacings {
-  .sp-#{$var} {
-      padding: #{$val};
-  }
+@each $var,
+$val in $spacings {
+    .sp-#{$var} {
+        padding: #{$val};
+    }
 }

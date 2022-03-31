@@ -1,16 +1,17 @@
 /*Header y Navbar*/
 
- 
-    .nav-link {
-        font-size: 1em;
-        padding: 1em;
-        &--active {
-            @extend .nav-link;
-            background-color: $principal;
-            transition: all 2s ease-out;
 
-            :hover {
-                color: $secondary;
-            }
+.nav-link {
+    font-size: 1em;
+    padding: 1em;
+
+    &--active {
+        @extend .nav-link;
+        background-color: $principal;
+        transition: all 2s ease-out;
+
+        :hover {
+            color: $secondary;
         }
     }
+}

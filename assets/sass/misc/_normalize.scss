@@ -27,10 +27,11 @@ main {
 }
 
 a {
-    text-decoration:underline;
+    text-decoration: underline;
     color: aliceblue;
-    display:inline-block;
+    display: inline-block;
+
     &:hover {
-        color: $secondary!important;
+        color: $secondary !important;
     }
 }
