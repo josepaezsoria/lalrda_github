@@ -9,14 +9,7 @@ $font-secondary: "bowly One SC",
 cursive;
 
 
-.background {
-    background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
-    background-position: center;
-    background-size: contain;
-}
-
-
-$spacings:(
+$spacings: (
     xlarge: 5rem,
     large: 3rem,
     medium: 2rem,
@@ -31,3 +24,5 @@ $sizes:(
     text: 1.5em,
     caption: 1em
     );
+
+    

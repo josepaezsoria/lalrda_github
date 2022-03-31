@@ -11,7 +11,7 @@
 @mixin button ($size: small) {
     background-color: $principal;
     color: $secondary;
-    padding: map-get ($spacings, xsmall) map-get($spacings, small);
+    padding: map-get ($spacings, large) map-get($spacings, small);
 
     @if $size == small {
         width: 70px;

@@ -22,17 +22,13 @@ main {
     }
 
     @else if $theme=='ligth' {
-        background-color: $ligth
+        background-color: $ligth;
     }
 }
 
-.btn {
-    @include button (small);
-}
-
 a {
-    text-decoration: none;
-    color: $secondary;
+    text-decoration:underline;
+    color: aliceblue;
     display:inline-block;
     &:hover {
         color: $secondary!important;
