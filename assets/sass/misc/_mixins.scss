@@ -1,9 +1,34 @@
 /*Helpers*/
 
-@mixin flex($direction, $justify, $align, $gap) {
-display: flex;
-flex-direction: $direction;
-justify-content: $justify;
-align-items: $align;
-gap: $gap;
+@mixin flex($direction: row, $justify: space-between, $align: flex-start, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin button ($size: small) {
+    background-color: $principal;
+    color: $secondary;
+    padding: map-get ($spacings, xsmall) map-get($spacings, small);
+
+    @if $size == small {
+        width: 70px;
+    }
+
+    @else if $size == medium {
+        width: 120px;
+    }
+
+    @else {
+        width: 200px;
+    }
+
+}
+
+@each $var, $val in $spacings {
+  .sp-#{$var} {
+      padding: #{$val};
+  }
 }
