@@ -13,9 +13,7 @@
 @media screen and (max-width: 768px) {
 
     .presentation {
-        @include flex (row, space-between, center, 2rem);
-        flex-wrap: wrap;
-        font-size: .8em;
+        @include flex (row, center, center, 2rem);
         padding: 0 map-get($spacings, medium);
 
 
@@ -25,6 +23,7 @@
         }
 
         &__description {
+            text-align: center;
             flex-grow: 1;
             order: -1;
 

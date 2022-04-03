@@ -58,6 +58,7 @@ ul, li {
 .btn {
   background-color: #d9415d;
   color: #020873;
+  border-style: dotted;
   padding: 1rem 1.5rem;
   width: 200px; }
 
@@ -119,15 +120,14 @@ footer {
   .presentation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
-    font-size: .8em;
     padding: 0 2rem; }
     .presentation__picture {
       flex-grow: 1;
       width: 100%; }
     .presentation__description {
+      text-align: center;
       flex-grow: 1;
       order: -1; } }
