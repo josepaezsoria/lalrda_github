@@ -38,8 +38,58 @@ a {
   a:hover {
     color: #020873 !important; }
 
+/*font colors*/
+h1 {
+  color: #d9415d; }
+
+h2 {
+  color: #020873; }
+
+h3,
+h4,
+h5 {
+  color: aliceblue; }
+
+ul, li {
+  color: black;
+  justify-content: center; }
+
+/*Buttons*/
+.btn {
+  background-color: #d9415d;
+  color: #020873;
+  padding: 1rem 1.5rem;
+  width: 200px; }
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 45px;
+  bottom: 20px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba 0, 0, 0, 0, 3;
+  z-index: 100; }
+  .btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff; }
+
+.icon-whatsapp {
+  background-image: url(assets/image/icons/whatsapp.png); }
+
 /*PARTIALS*/
 /*Header y Navbar*/
+.nav-item {
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
 .nav-link, .nav-link--active {
   font-size: 1em;
   padding: 1em; }
@@ -58,24 +108,7 @@ footer {
   bottom: 0; }
 
 /*VIEWS*/
-/*Main Section*/
-.presentation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem; }
-  .presentation__picture {
-    min-width: 320px; }
-  .presentation__img {
-    width: 100%; }
-  .presentation__description {
-    color: #020873; }
-  .presentation__container p {
-    font-size: 3.2em; }
-  .presentation__container h1 {
-    font-size: 6.8em; }
-
+/*Background general*/
 .img-1 {
   background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
   background-position: center;
@@ -84,17 +117,17 @@ footer {
 /*Media Queries*/
 @media screen and (max-width: 768px) {
   .presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     flex-wrap: wrap;
     font-size: .8em;
-    padding: 0 4em; }
-  .presentation__picture {
-    flex-grow: 1;
-    width: 100%; }
-  .presentation__description {
-    flex-grow: 1;
-    order: -1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem; } }
+    padding: 0 2rem; }
+    .presentation__picture {
+      flex-grow: 1;
+      width: 100%; }
+    .presentation__description {
+      flex-grow: 1;
+      order: -1; } }

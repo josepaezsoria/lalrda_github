@@ -24,6 +24,11 @@
 
 <body>
 
+  <!--Inicio Botón de Whatsapp-->
+  <a class="btn-wsp" href="https://api.whatsapp.com/send?phone=542645853067" target="_blank"><img
+      src="../../assets/image/icons/whatsapp.png" width="45" height="45" alt="whatsapp" /></a>
+  <!--Fin Botón de Whatsapp-->
+
   <!--HEADER con atributos Flexbox para los componentes.-->
   <header>
 
@@ -66,9 +71,10 @@
     <section class="container">
       <div class="row">
 
-        <div class="col-sm-12 col-md-4">
-          <H1>CONTACTO</H1>
-          <form action="formulario">
+        <div class="col-sm-12 col-md-4 presentation">
+
+          <form action="formulario" class="presentation__description">
+            <H1>CONTACTO</H1>
             <br>
             <input type="text" name="Nombre y apellido" id="" value="Nombre y Apellido">
             <br>
@@ -76,18 +82,19 @@
             <br>
             <textarea name="" id="" cols="30" rows="10"></textarea>
             <br>
-            <button class="button">Escribinos</button>
+            <button class="btn">Escribinos</button>
           </form>
+          <br>
         </div>
 
-        <div class="col-sm-12 col-md-8 img-1">
+        <div class="col-sm-12 col-md-8 img-1 presentation__img">
           <h3>
             GRACIAS POR ELEGIRNOS
           </h3>
 
-          <P>Escribinos y mantengamos el contacto.
+          <h5>Escribinos y mantengamos el contacto.
             Estamos para ayudarte.
-          </P>
+          </h5>
         </div>
       </div>
 

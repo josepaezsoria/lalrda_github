@@ -1,33 +1,4 @@
-/*Main Section*/
-
-
-.presentation {
-    @include flex (row, space-between, center, 2rem);
-
-    &__picture {
-        min-width: 320px;
-    }
-
-    &__img {
-        width: 100%;
-    }
-
-    &__description {
-        color: $secondary;
-    }
-
-    &__container {
-        p {
-            font-size: map-get($sizes, display);
-        }
-
-        h1 {
-            font-size: map-get($sizes, jumbo);
-        }
-    }
-
-}
-
+/*Background general*/
 
 .img-1 {
     background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
@@ -42,24 +13,22 @@
 @media screen and (max-width: 768px) {
 
     .presentation {
+        @include flex (row, space-between, center, 2rem);
         flex-wrap: wrap;
         font-size: .8em;
-        padding: 0 4em;
-    }
+        padding: 0 map-get($spacings, medium);
 
-    .presentation__picture {
-        flex-grow: 1;
-        width: 100%;
-    }
 
-    .presentation__description {
-        flex-grow: 1;
-        order: -1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
+        &__picture {
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        &__description {
+            flex-grow: 1;
+            order: -1;
+
+        }
     }
 
 }
