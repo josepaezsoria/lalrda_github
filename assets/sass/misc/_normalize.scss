@@ -3,7 +3,7 @@
 
 /* Normalize */
 
-$theme: 'ligth';
+$theme: 'light';
 
 *,
 *::after,
@@ -14,16 +14,26 @@ $theme: 'ligth';
 }
 
 main {
+    margin-top: auto;
     max-height: 100%;
     font-family: inherit;
+    background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
+    background-position: center;
+    background-size: contain;
 
     @if $theme=='dark' {
         background-color: $secondary;
     }
 
-    @else if $theme=='ligth' {
-        background-color: $ligth;
+    @else if $theme=='light' {
+        background-color: $light;
     }
+}
+
+body {
+    margin: 0;
+    position: relative;
+    padding-bottom: 6rem;
 }
 
 a {
@@ -37,17 +47,19 @@ a {
 }
 
 
+
 /*font colors*/
 
-h1 {
-    color: $principal;
-}
-
-h2 {
+h1,h3 {
     color: $secondary;
 }
 
-h3,
+h2 {
+    color: $primary;
+}
+
+
+
 h4,
 h5 {
     color: aliceblue;
@@ -66,12 +78,11 @@ ul,li {
 
 .btn-wsp {
     position: fixed;
-    width: 55px;
+    width: 30px;
     height: 55px;
     line-height: 45px;
     bottom: 20px;
     right: 30px;
-    background: #0df053;
     color: #fff;
     border-radius: 50px;
     text-align: center;

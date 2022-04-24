@@ -26,50 +26,52 @@
 
 <body>
 
-  <!--Inicio Botón de Whatsapp-->
-  <a class="btn-wsp" href="https://api.whatsapp.com/send?phone=542645853067" target="_blank"><img
-      src="assets/image/icons/whatsapp.png" width="45" height="45" alt="whatsapp" /></a>
-  <h1></h1>
-  <!--Fin Botón de Whatsapp-->
-
   <!--Inicio del HEADER.-->
   <header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+    <nav class="navbar navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="assets/image/logo lrda.jpeg" alt="" width="50px">
-          La Radio Del Alma
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">La Radio Del Alma</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link--active" href="./index.html">Inicio</a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasNavbarLabel">SECCIONES</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/pages/services.html">Programas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/pages/about.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/pages/gallery.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/pages/contact.html">Contacto</a>
+              </li>
+            </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./assets/pages/services.html">Programas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./assets/pages/about.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./assets/pages/gallery.html">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./assets/pages/contact.html">Contacto</a>
-            </li>
-          </ul>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
+      </div>
     </nav>
-
-
   </header>
+
   <!--Fin del HEADER.-->
+
 
   <!--Inicio del MAIN.-->
   <main>
@@ -78,52 +80,46 @@
 
       <div class="row">
 
-        <div class="col-sm-12 col-md-3 img-1">
-          <div>
-            <img class="container animate__animated animate__backInDown" src="assets/image/logo auricular.png" alt="">
-          </div>
+        <div style="margin-top: 4.5rem;" class="col-sm-12 col-md-6">
 
-          <div>
-            <audio autoplay class="container animate__animated animate__shakeX" id="stream" controls preload="none">
-              <source src="https://radios.solumedia.com/6032/stream;" type="audio/mpeg">
-              <H1>LA RADIO DEL ALMA</H1>
-            </audio>
-
-            <!--Inicio Redes sociales.-->
-            <div style="text-align: center;">
-              <h5>@laradiodelalma</h5>
-              <div>
-                <a href="https://facebook.com/laradiodelalma" target="_blank" rel="noopener noreferrer"><img
-                    src="assets/image/icons/facebook.png" width="30px" alt="facebook" /></a>
-                <a href="https://instagram.com/laradiodelalma" target="_blank" rel="noopener noreferrer"><img
-                    src="assets/image/icons/instagram.png" width="30px" alt="instagram" /></a>
-                <a href="https://twitter.com/laradiodelalma" target="_blank" rel="noopener noreferrer"><img
-                    src="assets/image/icons/twitter.png" width="30px" alt="Twitter" /></a>
-                <a href="https://tiktok.com/@laradiodelalma" target="_blank" rel="noopener noreferrer"><img
-                    src="assets/image/icons/tik-tok.png" width="30px" alt="Tik-Tok" /></a>
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/images/Shows/Pone La Pava (Feed).webp" class="d-block w-100" alt="...">
               </div>
-              <br>
-              <!--Fin Redes sociales.-->
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/Shows/Humoriarte (Feed).webp" class="d-block w-100" alt="...">
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-
 
         </div>
 
-        <div class="col-sm-12 col-md-9 img-1">
-          <div>
-            <img class="img-fluid" src="assets/image/Hero.webp" alt="Imagen de otoño Radio">
-          </div>
-
+        <div style="margin-top: 4.5rem;" class="col-sm-12 col-md-6 container">
+<img class="img-fluid" src="assets/image/circle-scatter-haikei.svg" alt="">
         </div>
-
-      </div>
 
     </section>
 
+
+    <!--Inicio Botón de Whatsapp-->
+    <a class="btn-wsp" href="https://api.whatsapp.com/send?phone=542645853067" target="_blank"><img
+        src="assets/image/icons/whatsapp.png" width="45" height="45" alt="whatsapp" /></a>
+    <h1></h1>
+    <!--Fin Botón de Whatsapp-->
+
   </main>
   <!--Fin del MAIN.-->
-
 
   <!--Inicio del FOOTER.-->
   <footer>

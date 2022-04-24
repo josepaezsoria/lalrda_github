@@ -9,7 +9,7 @@
 }
 
 @mixin button ($size: small) {
-    background-color: $principal;
+    background-color: $primary;
     color: $secondary;
     border-style: dotted;
     padding: map-get($spacings, xsmall) map-get($spacings, small);

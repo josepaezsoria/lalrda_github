@@ -1,5 +1,6 @@
 /*Header y Navbar*/
 
+
 .nav-item {
     justify-content: center;
     align-items: center;
@@ -12,7 +13,7 @@
 
     &--active {
         @extend .nav-link;
-        background-color: $principal;
+        background-color: $primary;
         transition: all 2s ease-out;
 
         :hover {

@@ -27,25 +27,33 @@
   box-sizing: border-box; }
 
 main {
+  margin-top: auto;
   max-height: 100%;
   font-family: inherit;
-  background-color: #ffffff; }
+  background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
+  background-position: center;
+  background-size: contain;
+  background-color: #f8f9fa; }
+
+body {
+  margin: 0;
+  position: relative;
+  padding-bottom: 6rem; }
 
 a {
   text-decoration: underline;
   color: aliceblue;
   display: inline-block; }
   a:hover {
-    color: #020873 !important; }
+    color: #d9415d !important; }
 
 /*font colors*/
-h1 {
+h1, h3 {
   color: #d9415d; }
 
 h2 {
   color: #020873; }
 
-h3,
 h4,
 h5 {
   color: aliceblue; }
@@ -56,20 +64,19 @@ ul, li {
 
 /*Buttons*/
 .btn {
-  background-color: #d9415d;
-  color: #020873;
+  background-color: #020873;
+  color: #d9415d;
   border-style: dotted;
   padding: 1rem 1.5rem;
   width: 200px; }
 
 .btn-wsp {
   position: fixed;
-  width: 55px;
+  width: 30px;
   height: 55px;
   line-height: 45px;
   bottom: 20px;
   right: 30px;
-  background: #0df053;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -95,13 +102,14 @@ ul, li {
   font-size: 1em;
   padding: 1em; }
   .nav-link--active {
-    background-color: #d9415d;
+    background-color: #020873;
     transition: all 2s ease-out; }
     .nav-link--active :hover {
-      color: #020873; }
+      color: #d9415d; }
 
 /*Footer*/
 footer {
+  position: absolute;
   min-height: 15vh;
   text-align: center;
   border-top: 1px solid rgba(50, 50, 50, 0.3);
@@ -110,11 +118,6 @@ footer {
 
 /*VIEWS*/
 /*Background general*/
-.img-1 {
-  background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
-  background-position: center;
-  background-size: contain; }
-
 /*Media Queries*/
 @media screen and (max-width: 768px) {
   .presentation {

@@ -1,12 +1,31 @@
 /* variables */
 
-$principal: #d9415d;
-$ligth: #ffffff;
-$secondary: #020873;
 $font-primary: "Montserrat",
 san-serif;
 $font-secondary: "bowly One SC",
 cursive;
+
+
+// Default variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+
+
+
+$primary: #020873;
+$secondary: #d9415d;
+$light: #f8f9fa;
+$dark: #212529;
+
+
+$theme-colors: (primary: $primary,
+    secondary: $secondary,
+    light: $light,
+    dark: $dark);
+
+
+
 
 
 $spacings: (xlarge: 5rem,
@@ -15,9 +34,10 @@ $spacings: (xlarge: 5rem,
     small: 1.5rem,
     xsmall: 1rem);
 
-    
+
 $sizes:(jumbo: 6.8em,
     display: 3.2em,
     title: 2em,
     text: 1.5em,
     caption: 1em);
+
