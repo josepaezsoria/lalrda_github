@@ -26,39 +26,57 @@
       src="../../assets/image/icons/whatsapp.png" width="45" height="45" alt="whatsapp" /></a>
   <!--Fin Botón de Whatsapp-->
 
-  <!--HEADER con atributos Flexbox para los componentes.-->
   <header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+    <nav class="navbar navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="../../index.html">
-          <img src="../../assets/image/logo lrda.jpeg" alt="" width="50px">
-          La Radio Del Alma
+          <h1>La Radio Del Alma</h1>
         </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="../../index.html">Inicio</a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasNavbarLabel">SECCIONES</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Programas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+            </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Programas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link--active" href="gallery.html">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacto</a>
-            </li>
-          </ul>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <!--Inicio del FOOTER.-->
+            <footer>
+              <div class="presentation">
+                <p>TODOS LOS DERECHOS RESERVADOS | Copyright&copy; 2022 | Desarrollado por José Paez Soria</p>
+              </div>
+              <hr>
+            </footer>
+            <!--Fin del FOOTER.-->
+
+          </div>
         </div>
+      </div>
     </nav>
   </header>
   <!--MAIN con atributos Flexbox para los componentes.-->
