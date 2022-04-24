@@ -48,11 +48,17 @@ a {
     color: #d9415d !important; }
 
 /*font colors*/
-h1, h3 {
+p {
   color: #d9415d; }
+
+h1 {
+  font-size: large; }
 
 h2 {
   color: #020873; }
+
+h3 {
+  color: #d9415d; }
 
 h4,
 h5 {
@@ -75,14 +81,14 @@ ul, li {
   width: 30px;
   height: 55px;
   line-height: 45px;
-  bottom: 20px;
+  bottom: 60px;
   right: 30px;
   color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
   box-shadow: 0px 1px 10px rgba 0, 0, 0, 0, 3;
-  z-index: 100; }
+  z-index: 1; }
   .btn-wsp:hover {
     text-decoration: none;
     color: #0df053;
@@ -109,6 +115,8 @@ ul, li {
 
 /*Footer*/
 footer {
+  background-color: #020873;
+  margin-bottom: 0.5em;
   position: absolute;
   min-height: 15vh;
   text-align: center;
