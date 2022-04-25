@@ -11,15 +11,13 @@ $theme: 'light';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-main {
-    margin-top: auto;
-    max-height: 100%;
-    font-family: inherit;
-    background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
-    background-position: center;
-    background-size: contain;
+body {
+    margin: 0;
+    position: relative;
+    padding-bottom: 6rem;
 
     @if $theme=='dark' {
         background-color: $secondary;
@@ -30,11 +28,19 @@ main {
     }
 }
 
-body {
-    margin: 0;
-    position: relative;
-    padding-bottom: 6rem;
+main {
+    max-height: 100%;
+    font-family: inherit;
+    margin-top: 1rem;
+    background: linear-gradient(to left bottom, #020873 50%, #610073, #94006e, #bb1665, #d9415d);
+    background-position: center;
+    background-size: contain;
+ 
+
 }
+
+
+/*font colors*/
 
 a {
     text-decoration: underline;
@@ -45,10 +51,6 @@ a {
         color: $secondary !important;
     }
 }
-
-
-
-/*font colors*/
 
 p {
     color: $secondary;
